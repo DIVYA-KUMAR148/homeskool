@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+   
+<meta charset="utf-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+<title>Bulletin-Board</title>
+    
+<link rel="stylesheet" href="C:\Users\DELL\Desktop\PROGATE WEBSITE\stylesheet css.css">
+     
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+</head>
+  
+<body>
+    
+<header>
+    
+<div class="container">
+ 
+<div class="header-left">
+          
+<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\1.html"><center><img class="logo" src="C:\Users\DELL\Desktop\PROGATE WEBSITE\homeskool.jpg"></center></a><br><marquee behavior="scroll" direction="right"><h3 style="color:black;">The whole purpose of education is to turn Mirrors into Windows !</h3></marquee><br>
+</div>
+        
+             
+</div>    
+<div class="topnav">
+	<center>
+	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\About us.html">ABOUT-US</a>
+          
+	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Contact us.html">CONTACT-US</a>
+          
+	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\login.html" class="login">LOG-IN</a>
+     
+  	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Bulletin-board.html">BULLETIN-BOARD</a>
+	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Timetables.html">TIME-TABLES</a>
+  	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Resources.html">RESOURCES</a>
+  	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Assignments.html">ASSIGNMENTS</a>
+	<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Attendance.html">ATTENDANCE</a>
+	</center>
+</div>
+<body>
+<br>
+<br>
+<br>
+<br>
+<h2>NOTICE BOARD</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openWork(event, 'Assignments')" id="defaultOpen">ASSIGNMENTS</button>
+  <button class="tablinks" onclick="openWork(event, 'Homework')">HOMEWORK</button>
+  <button class="tablinks" onclick="openWork(event, 'Important circulars')">IMPORTANT CIRCULARS</button>
+</div>
+
+<div id="Assignments" class="tabcontent">
+  <h3>Assignments Notices</h3><br>
+  <p>August Webathon submission....<br>
+<br><br>Submission Due Date:30-08-2020
+<br><br>
+Go submit Quickly!!
+<br><br><br><br><br><br>
+</p>
+<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Assignments.html"><span class="btn message">GO TO ASSIGNMENTS</span></a>
+</div>
+
+<div id="Homework" class="tabcontent">
+  <h3>Homework Notices</h3><br>
+  <p>Practice the basics of HTML/CSS and JAVASCRIPT.....<br>
+<br><br>Go Through Online Resources For Reference.
+<br><br><br><br><br><br><br><br>
+</p> 
+<a href="C:\Users\DELL\Desktop\PROGATE WEBSITE\Resources.html"><span class="btn message">GO TO RESOURCES</span></a>
+</div>
+
+<div id="Important circulars" class="tabcontent">
+  <h3>Important Circulars</h3><br>
+  <p>We have holiday this tuesday on account of GANESH CHATURTHI.......<br>
+<br>So enjoy on that day...</p>
+</div>
+<script>
+function openWork(evt, workName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(workName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
